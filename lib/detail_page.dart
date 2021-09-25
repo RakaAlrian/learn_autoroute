@@ -33,6 +33,14 @@ class _DetailPageState extends State<DetailPage> {
             itemBuilder: (BuildContext ctx, index) {
               return GestureDetector(
                 onTap: () {
+                  // Expected behavior
+                  // Navigator.push(
+                  //   context,
+                  //   MaterialPageRoute(
+                  //     builder: (context) => DetailPage(value: list[index]),
+                  //   ),
+                  // );
+                  // Strange behavior with this line below
                   context.router.push(DetailPageRoute(value: list[index]));
                 },
                 child: Container(
