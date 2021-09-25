@@ -1,0 +1,14 @@
+analyzer:
+  exclude:
+    - "**/*.g.dart"
+    - "**/*.freezed.dart"
+    - "**/*.config.dart"
+    - "**/*.gr.dart"
+  errors:
+    invalid_assignment: info
+    sort_child_properties_last: ignore
+    argument_type_not_assignable: info
+    constant_identifier_names: ignore
+    prefer_const_literals_to_create_immutables: ignore
+    invalid_use_of_protected_member: error
+    invalid_annotation_target: ignore
